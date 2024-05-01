@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Табличка</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <table id="myTable" border="2px" cellspacing="0">
+        <tr>
+          <td>"English Grammar In Use" Raymond Murphy</td>
+        </tr>
+        <tr>
+          <td>
+            "Practice Makes Perfect Complete French Grammar", Annie Heminway
+          </td>
+        </tr>
+        <tr>
+          <td><p id="str">Themen AkA1-A2</p></td>
+        </tr>
+        <tr>
+          <td>"Le presposizioni italiane", Alessandro de Giuli</td>
+        </tr>
+      </table>
+      <p id="text"></p>
+    </div>
+    <div id="select">
+      <div id="backcolor">
+        <label for="select_back_color">Выберите цвет фона таблицы:</label>
+        <select id="select_back_color" name="select_backcolor">
+          <option value="#DEF7FE">Пастельно-небесный</option>
+          <option value="#E7ECFF">Светло-лиловый</option>
+          <option value="#FED6BC">Нежно-персиковый</option>
+        </select>
+      </div>
+      <br />
+      <div id="font_color">
+        <label for="select_font_color">Выберите цвет шрифта:</label>
+        <select id="select_font_color" name="select_font_color">
+          <option value="black">Черный</option>
+          <option value="red">Красный</option>
+          <option value="purple">Фиолетовый</option>
+        </select>
+      </div>
+      <br />
+      <div id="font_weight">
+        <label for="select_font_size">Выберите размер шрифта:</label>
+        <select id="select_font_size" name="select_font_size">
+          <option value="15px">Маленький</option>
+          <option value="20px">Обычный</option>
+          <option value="25px">Большой</option>
+        </select>
+      </div>
+    </div>
+    <div id="buttons">
+      <div>
+        <button id="button1" onclick="addRow('myTable')">
+          Добавить строку
+        </button>
+      </div>
+      <div>
+        <button id="button2" onclick="editTable('myTable')">
+          Изменить всю таблицу
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
